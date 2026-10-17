@@ -23,7 +23,14 @@ function Header({ onNavigate, darkMode, onToggleDarkMode }) {
     <header>
       <Navbar className="header-navbar shadow-sm">
         <Container className="header-container d-flex justify-content-between align-items-center">
-          <h1 className="header-logo">ThreadHive</h1>
+          <button
+            type="button"
+            className="header-logo"
+            onClick={() => onNavigate('home')}
+            aria-label="Go to ThreadHive home"
+          >
+            ThreadHive
+          </button>
           <div className="d-flex align-items-center">
             <button
               className="dark-mode-toggle"

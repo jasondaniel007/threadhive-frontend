@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Container, Card, Form, Button } from "react-bootstrap";
 import './Auth.css';
 
-function Login() {
+function Login({ onNavigate }) {
   const [form, setForm] = useState({ email: '', password: '' });
 
   const handleChange = e => {
@@ -56,6 +56,14 @@ function Login() {
             Login
           </Button>
         </Form>
+        <Button
+          type="button"
+          variant="link"
+          className="auth-secondary-link"
+          onClick={() => onNavigate('forgot-password')}
+        >
+          Forgot your password?
+        </Button>
       </Card>
     </Container>
 

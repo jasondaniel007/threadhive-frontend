@@ -3,6 +3,7 @@ import './CommentForm.css';
 
 export default function CommentForm() {
   const handlePostComment = (e) => {
+    e.preventDefault();
     alert('Post Comment clicked!');
   };
 

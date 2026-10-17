@@ -84,3 +84,18 @@
   opacity: 0.6;
   cursor: not-allowed;
 }
+
+.auth-secondary-link {
+  display: block;
+  margin: 16px auto 0;
+  padding: 0;
+  color: var(--primary-blue) !important;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.auth-secondary-link:hover {
+  color: var(--primary-orange) !important;
+  text-decoration: underline;
+}
